@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HandyUnlock – Handy Reparatur Graz</title>
+<meta name="description" content="HandyUnlock in Graz – Handy Reparatur, Schutzfolien, Hüllen, Ladegeräte, Zubehör sowie An- und Verkauf. Reitschulgasse 15, 8010 Graz.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://handyunlock3-web.github.io/Handyunlock-webseite/">
+<style>
+:root{
+  --gold:#a88a3d;
+  --gold-dark:#826a2f;
+  --black:#25272a;
+  --cream:#f8f6f0;
+  --white:#fff;
+  --muted:#666;
+  --line:#e7e1d5;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  color:var(--black);
+  background:var(--cream);
+}
+a{color:inherit}
+header{
+  background:rgba(255,255,255,.96);
+  border-bottom:1px solid var(--line);
+  position:sticky;top:0;z-index:20;
+  backdrop-filter:blur(10px);
+}
+nav{
+  max-width:1120px;margin:auto;padding:14px 20px;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+}
+.logo{font-size:28px;font-weight:900;letter-spacing:-1.2px}
+.logo span{color:var(--gold)}
+.nav-actions{display:flex;gap:10px}
+.small-btn{
+  text-decoration:none;font-weight:800;padding:10px 14px;border-radius:11px;
+  border:1px solid var(--gold);white-space:nowrap;
+}
+.small-btn.gold{background:var(--gold);color:#fff}
+.small-btn.outline{color:var(--gold);background:#fff}
+.hero{
+  max-width:1120px;margin:auto;padding:64px 20px 46px;
+  display:grid;grid-template-columns:1.08fr .92fr;gap:42px;align-items:center;
+}
+.eyebrow{color:var(--gold);font-weight:900;letter-spacing:2px;font-size:13px}
+h1{font-size:62px;line-height:.98;margin:12px 0 18px;letter-spacing:-2.5px}
+h1 span{color:var(--gold)}
+.hero p{font-size:19px;line-height:1.65;color:#555;max-width:640px}
+.hero-card{
+  min-height:340px;border-radius:24px;
+  background:linear-gradient(145deg,#ffffff,#f0ebe0);
+  border:1px solid var(--line);
+  box-shadow:0 18px 50px #00000014;
+  display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;
+}
+.hero-card .mark{font-size:66px;margin-bottom:14px}
+.hero-card strong{display:block;font-size:28px}
+.hero-card span{color:var(--gold);font-weight:900}
+.hero-card p{font-size:15px;margin:10px auto 0;color:#777;max-width:340px}
+.buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:27px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:14px 18px;border-radius:11px;text-decoration:none;font-weight:900;
+}
+.btn.primary{background:var(--gold);color:white}
+.btn.primary:hover{background:var(--gold-dark)}
+.btn.secondary{border:1.5px solid var(--gold);color:var(--gold);background:white}
+.section{padding:58px 20px}
+.section.white{background:#fff}
+.wrap{max-width:1120px;margin:auto}
+.section-title{text-align:center;font-size:34px;margin:0 0 10px;letter-spacing:-.7px}
+.section-sub{text-align:center;color:#707070;margin:0 auto 30px;max-width:650px;line-height:1.6}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.card{
+  border:1px solid var(--line);border-radius:18px;padding:24px 18px;background:#fff;
+  box-shadow:0 8px 25px #00000008;
+}
+.card .icon{font-size:34px}
+.card h3{font-size:17px;margin:12px 0 6px}
+.card p{font-size:14px;color:#666;line-height:1.5;margin:0}
+.trust{
+  margin-top:24px;display:flex;justify-content:center;gap:34px;flex-wrap:wrap;
+  font-weight:900
+}
+.trust b{color:var(--gold)}
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.work-placeholder{
+  min-height:210px;border:1px dashed #c9bea7;border-radius:18px;
+  background:linear-gradient(145deg,#fbfaf7,#f0ece3);
+  display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;
+  color:#777
+}
+.work-placeholder strong{display:block;color:var(--black);margin-bottom:7px}
+.contactbox{
+  background:var(--black);color:white;border-radius:22px;padding:34px;
+  display:grid;grid-template-columns:1fr 1fr;gap:28px;
+}
+.contactbox h2{margin:0 0 12px}
+.contactbox p{color:#ddd;line-height:1.8;margin:0 0 22px}
+.contactbox .btn.secondary{background:transparent;color:#fff;border-color:#bda660}
+footer{text-align:center;padding:28px 20px;color:#777;font-size:13px}
+.mobile-bar{display:none}
+@media(max-width:850px){
+  .hero{grid-template-columns:1fr;padding-top:38px}
+  h1{font-size:46px}
+  .hero-card{min-height:240px;order:-1}
+  .cards,.work-grid{grid-template-columns:1fr 1fr}
+  .contactbox{grid-template-columns:1fr}
+  .nav-actions .outline{display:none}
+  .mobile-bar{
+    display:grid;grid-template-columns:1fr 1fr;gap:8px;
+    position:fixed;left:10px;right:10px;bottom:10px;z-index:50;
+  }
+  .mobile-bar a{
+    text-align:center;padding:13px 10px;border-radius:12px;text-decoration:none;
+    font-weight:900;box-shadow:0 5px 18px #0003;
+  }
+  .mobile-bar .call{background:#fff;color:var(--black)}
+  .mobile-bar .wa{background:#1f9d55;color:#fff}
+  body{padding-bottom:72px}
+}
+@media(max-width:560px){
+  .cards,.work-grid{grid-template-columns:1fr}
+  .logo{font-size:24px}
+  .small-btn{padding:9px 11px}
+}
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">Handy<span>Unlock</span></div>
+    <div class="nav-actions">
+      <a class="small-btn outline" href="https://wa.me/4368120270709" target="_blank" rel="noopener">WHATSAPP</a>
+      <a class="small-btn gold" href="tel:+4368120270709">ANRUFEN</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div>
+      <div class="eyebrow">HANDY REPARATUR • GRAZ</div>
+      <h1>Handy<span>Unlock</span></h1>
+      <p>Schnelle und zuverlässige Handy-Reparatur, Zubehör sowie An- und Verkauf. Persönlicher Service direkt in Graz.</p>
+      <div class="buttons">
+        <a class="btn primary" href="https://wa.me/4368120270709" target="_blank" rel="noopener">💬 WhatsApp</a>
+        <a class="btn secondary" href="tel:+4368120270709">📞 0681 20270709</a>
+        <a class="btn secondary" target="_blank" rel="noopener" href="https://maps.google.com/?q=Handyshop+Handy+Unlock,+Reitschulgasse+15,+8010+Graz">📍 Google Maps</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div>
+        <div class="mark">📱</div>
+        <strong>Handy<span>Unlock</span></strong>
+        <p>Neue Fotos vom Geschäft und von Reparaturen kommen hier hinein, sobald sie ausgewählt sind.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white">
+    <div class="wrap">
+      <h2 class="section-title">Unsere Leistungen</h2>
+      <p class="section-sub">Alles rund um Smartphone, Reparatur und Zubehör – direkt in Graz.</p>
+      <div class="cards">
+        <div class="card"><div class="icon">🛠️</div><h3>HANDY REPARATUR</h3><p>Reparaturen und Fehlerprüfung für Smartphones.</p></div>
+        <div class="card"><div class="icon">📱</div><h3>SCHUTZFOLIEN</h3><p>Schutz für Displays und passende Folien.</p></div>
+        <div class="card"><div class="icon">▯</div><h3>HÜLLEN</h3><p>Cases und Handyhüllen für verschiedene Modelle.</p></div>
+        <div class="card"><div class="icon">🔌</div><h3>LADEGERÄTE</h3><p>Kabel, Netzteile und Ladezubehör.</p></div>
+        <div class="card"><div class="icon">🎧</div><h3>ZUBEHÖR</h3><p>Handy- und Computerzubehör.</p></div>
+        <div class="card"><div class="icon">↔️</div><h3>AN- & VERKAUF</h3><p>Smartphones und Geräte an- und verkaufen.</p></div>
+      </div>
+      <div class="trust">
+        <span><b>✓</b> SCHNELL</span>
+        <span><b>✓</b> ZUVERLÄSSIG</span>
+        <span><b>✓</b> PROFESSIONELL</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="section-title">Unsere Arbeiten</h2>
+      <p class="section-sub">Hier zeigen wir bald echte Reparaturen und Arbeiten aus unserem Geschäft.</p>
+      <div class="work-grid">
+        <div class="work-placeholder"><div><strong>Reparatur-Foto 1</strong>Platz für ein neues Foto</div></div>
+        <div class="work-placeholder"><div><strong>Reparatur-Foto 2</strong>Platz für ein neues Foto</div></div>
+        <div class="work-placeholder"><div><strong>Reparatur-Foto 3</strong>Platz für ein neues Foto</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white">
+    <div class="wrap">
+      <div class="contactbox">
+        <div>
+          <h2>Besuchen Sie uns</h2>
+          <p>Reitschulgasse 15<br>8010 Graz, Österreich</p>
+          <a class="btn primary" target="_blank" rel="noopener" href="https://maps.google.com/?q=Handyshop+Handy+Unlock,+Reitschulgasse+15,+8010+Graz">Route öffnen</a>
+        </div>
+        <div>
+          <h2>Kontakt</h2>
+          <p>Telefon: 0681 20270709<br>E-Mail: Handyunlock3@gmail.com</p>
+          <div class="buttons">
+            <a class="btn secondary" href="mailto:Handyunlock3@gmail.com">E-Mail senden</a>
+            <a class="btn primary" href="https://wa.me/4368120270709" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 HandyUnlock • Handy Reparatur Graz</footer>
+
+<div class="mobile-bar">
+  <a class="call" href="tel:+4368120270709">📞 Anrufen</a>
+  <a class="wa" href="https://wa.me/4368120270709" target="_blank" rel="noopener">💬 WhatsApp</a>
+</div>
+</body>
+</html>
